@@ -6,7 +6,6 @@ services:
       MARIADB_DATABASE: ${MARIADB_DATABASE}
       MARIADB_USER: ${MARIADB_USER}
       MARIADB_PASSWORD: ${MARIADB_PASSWORD}
-      MARIADB_ROOT_HOST: '%'
     volumes:
       - ./data:/var/lib/mysql
       - ./my.cnf:/etc/mysql/conf.d/my.cnf:ro
